@@ -26,7 +26,7 @@ RegisterNetEvent("mst-mission:client:TakeDailyMission", function()
             end
         end, "dailymission")
     else 
-        QBCore.Functions.Notify("Bạn đã nhận một nhiệm vụ rồi, bạn có thể kiểm tra tiến độ")
+        QBCore.Functions.Notify("You have already received a quest, you can check the progress")
     end 
 end)
 
@@ -40,7 +40,7 @@ RegisterNetEvent("mst-mission:client:TakeHourlyMission", function()
             end
         end, "hourlymission")
     else 
-        QBCore.Functions.Notify("Bạn đã nhận một nhiệm vụ rồi, bạn có thể kiểm tra tiến độ")
+        QBCore.Functions.Notify("You have already received a quest, you can check the progress")
     end 
 end)
 
@@ -49,14 +49,14 @@ RegisterNetEvent("mst-mission:client:TakeHiddenMission", function(mission)
     local ID = Config.Hidden_Mission[mission].id
     if not QBCore.Functions.GetPlayerData().metadata[ID] then
         if not QBCore.Functions.GetPlayerData().metadata[ID.."_done"] then 
-            QBCore.Functions.Notify("Bạn đã nhận được nhiệm vụ hàng giờ mang tên "..Config.Hidden_Mission[mission].name..", nhiệm vụ này yêu cầu bạn "..Config.Hidden_Mission[mission].label..".")
+            QBCore.Functions.Notify("You have received the hourly quest called "..Config.Hidden_Mission[mission].name..", This mission requires you "..Config.Hidden_Mission[mission].label..".")
             TriggerServerEvent("mst-mission:server:TakeHiddenMission", ID)
             TriggerEvent("mst-mission:client:CheckHiddenProgress", mission)
         else 
-            QBCore.Functions.Notify("Bạn đã hoàn thành nhiệm vụ này rồi.")
+            QBCore.Functions.Notify("You have completed this quest.")
         end 
     else 
-        QBCore.Functions.Notify("Bạn đã nhận nhiệm vụ này rồi, hãy cố gắng hoàn thành nó")
+        QBCore.Functions.Notify("You have already accepted this quest, please try to complete it")
     end 
 end)
 

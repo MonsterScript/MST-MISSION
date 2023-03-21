@@ -42,7 +42,7 @@ RegisterNetEvent("mst-mission:server:TakeDailyMission", function(mission)
         Player.Functions.SetMetaData("dailymission_timestamp", time_table.day)
         Player.Functions.SetMetaData("dailymission", mission)
     else 
-        TriggerClientEvent('QBCore:Notify', src, "Bạn đã nhận nhiệm vụ ngày rồi, vui lòng đợi qua ngày mới", "error") 
+        TriggerClientEvent('QBCore:Notify', src, "You have already received the day's quest, please wait for a new day", "error") 
     end
 end)
 

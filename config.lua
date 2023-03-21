@@ -54,7 +54,7 @@ Config.Hourly_Mission = {
 
 
 
--- MYSTERIOUS POINT MISSION (Updating Soon)
+-- MYSTERIOUS POINT MISSION
 Config.Hidden_Mission = {
     {
 
@@ -65,7 +65,7 @@ Config.Hidden_Mission = {
 
         id = "hiddenmission", -- This ID, you can just put it indiscriminately not to coincide with other tasks
         name = "Black Item",
-        label = "Trojan Usb Rob",
+        label = "Thu thập usb chứa mã độc",
          required = {
             ["trojan_usb"] = 10,
         },
@@ -78,3 +78,8 @@ Config.Hidden_Mission = {
         }
     }, 
 }
+
+
+
+
+
