@@ -15,3 +15,5 @@ Features :
 +Detailed quest announcement
 
 Discord Support : https://discord.gg/monsterscript
+
+Buy Me A Coffee : https://www.buymeacoffee.com/monsterrr
