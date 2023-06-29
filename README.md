@@ -14,5 +14,6 @@ Features :
 
 +Detailed quest announcement
 
-Discord Support : https://discord.gg/monsterscript
+- Discord Support : https://discord.gg/monsterscript
+
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/A0A1L0IAJ)
